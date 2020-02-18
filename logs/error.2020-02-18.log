@@ -1,0 +1,388 @@
+2020-02-18T12:49:16.492Z - error: Unhandled Rejection at: Promise Promise {
+  <rejected> { SequelizeValidationError: string violation: announcement cannot be an array or an object
+    at Promise.all.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:72:7)
+    at runHooks.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:107:14)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:106:8)
+    at InstanceValidator.validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:90:38)
+    at model.validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3823:49)
+    at Promise.try (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3600:21)
+From previous event:
+    at model.save (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3597:23)
+    at Function.create (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:2023:8)
+    at getDataFromExternalSource (/home/darshit/repo/moneyman/server/api/stock/stock.service.js:97:25)
+    at <anonymous> name: 'SequelizeValidationError', errors: [ [Object] ] } } reason: SequelizeValidationError: string violation: announcement cannot be an array or an object
+    at Promise.all.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:72:7)
+    at runHooks.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:107:14)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:106:8)
+    at InstanceValidator.validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:90:38)
+    at model.validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3823:49)
+    at Promise.try (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3600:21)
+From previous event:
+    at model.save (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3597:23)
+    at Function.create (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:2023:8)
+    at getDataFromExternalSource (/home/darshit/repo/moneyman/server/api/stock/stock.service.js:97:25)
+    at <anonymous>
+2020-02-18T12:50:45.494Z - error: Unhandled Rejection at: Promise Promise {
+  <rejected> { SequelizeValidationError: string violation: announcement cannot be an array or an object
+    at Promise.all.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:72:7)
+    at runHooks.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:107:14)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:106:8)
+    at InstanceValidator.validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:90:38)
+    at model.validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3823:49)
+    at Promise.try (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3600:21)
+From previous event:
+    at model.save (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3597:23)
+    at Function.create (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:2023:8)
+    at getDataFromExternalSource (/home/darshit/repo/moneyman/server/api/stock/stock.service.js:97:25)
+    at <anonymous> name: 'SequelizeValidationError', errors: [ [Object] ] } } reason: SequelizeValidationError: string violation: announcement cannot be an array or an object
+    at Promise.all.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:74:15)
+From previous event:
+    at InstanceValidator._validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:72:7)
+    at runHooks.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:107:14)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at InstanceValidator._validateAndRunHooks (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:106:8)
+    at InstanceValidator.validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/instance-validator.js:90:38)
+    at model.validate (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3823:49)
+    at Promise.try (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3600:21)
+From previous event:
+    at model.save (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3597:23)
+    at Function.create (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:2023:8)
+    at getDataFromExternalSource (/home/darshit/repo/moneyman/server/api/stock/stock.service.js:97:25)
+    at <anonymous>
+2020-02-18T12:52:24.218Z - error: Unhandled Rejection at: Promise Promise {
+  <rejected> { SequelizeDatabaseError: Data too long for column 'announcement' at row 1
+    at Query.formatError (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+From previous event:
+    at Query.run (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:558:8)
+    at /home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:457:28)
+    at QueryInterface.insert (/home/darshit/repo/moneyman/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3685:53)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at model.save (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3661:8)
+    at Function.create (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:2023:8)
+    at getDataFromExternalSource (/home/darshit/repo/moneyman/server/api/stock/stock.service.js:97:25)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { Error: Data too long for column 'announcement' at row 1
+    at Packet.asError (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packets/packet.js:712:17)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:28:26)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+     code: 'ER_DATA_TOO_LONG',
+     errno: 1406,
+     sqlState: '22001',
+     sqlMessage: 'Data too long for column \'announcement\' at row 1',
+     sql: 'INSERT INTO `daily_data` (`id`,`stock_id`,`pricepercentchange`,`hp`,`lp`,`pricecurrent`,`DVolAvg5`,`DVolAvg10`,`DVolAvg30`,`DayAvg5`,`DayAvg30`,`DayAvg50`,`DayAvg150`,`DayAvg200`,`VOL`,`moneycontrol_json`,`announcement`,`created_on`,`updated_on`) VALUES (DEFAULT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,\'null\',\'[{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.As we could not able to connect to the website(mail sent regarding this at 3.25 p.m), we are now attaching once again the details of the outcome of the meeting under this head also. The exchange had announced on our behalf the quick results which contained the attached information\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has submitted to the Exchange, the financial results for the period ended December 31, 2019.\\",\\"desc\\":\\"Financial Result Updates\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, had written to the company. 3M India Limited has submitted their response.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"03-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, has written to the company. The response from the company is awaited.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"31-Jan-2020\\"}]\',\'2020-02-18 18:22:24\',\'2020-02-18 18:22:24\');' },
+  original: 
+   { Error: Data too long for column 'announcement' at row 1
+    at Packet.asError (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packets/packet.js:712:17)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:28:26)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+     code: 'ER_DATA_TOO_LONG',
+     errno: 1406,
+     sqlState: '22001',
+     sqlMessage: 'Data too long for column \'announcement\' at row 1',
+     sql: 'INSERT INTO `daily_data` (`id`,`stock_id`,`pricepercentchange`,`hp`,`lp`,`pricecurrent`,`DVolAvg5`,`DVolAvg10`,`DVolAvg30`,`DayAvg5`,`DayAvg30`,`DayAvg50`,`DayAvg150`,`DayAvg200`,`VOL`,`moneycontrol_json`,`announcement`,`created_on`,`updated_on`) VALUES (DEFAULT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,\'null\',\'[{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.As we could not able to connect to the website(mail sent regarding this at 3.25 p.m), we are now attaching once again the details of the outcome of the meeting under this head also. The exchange had announced on our behalf the quick results which contained the attached information\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has submitted to the Exchange, the financial results for the period ended December 31, 2019.\\",\\"desc\\":\\"Financial Result Updates\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, had written to the company. 3M India Limited has submitted their response.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"03-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, has written to the company. The response from the company is awaited.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"31-Jan-2020\\"}]\',\'2020-02-18 18:22:24\',\'2020-02-18 18:22:24\');' },
+  sql: 'INSERT INTO `daily_data` (`id`,`stock_id`,`pricepercentchange`,`hp`,`lp`,`pricecurrent`,`DVolAvg5`,`DVolAvg10`,`DVolAvg30`,`DayAvg5`,`DayAvg30`,`DayAvg50`,`DayAvg150`,`DayAvg200`,`VOL`,`moneycontrol_json`,`announcement`,`created_on`,`updated_on`) VALUES (DEFAULT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,\'null\',\'[{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.As we could not able to connect to the website(mail sent regarding this at 3.25 p.m), we are now attaching once again the details of the outcome of the meeting under this head also. The exchange had announced on our behalf the quick results which contained the attached information\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has submitted to the Exchange, the financial results for the period ended December 31, 2019.\\",\\"desc\\":\\"Financial Result Updates\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, had written to the company. 3M India Limited has submitted their response.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"03-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, has written to the company. The response from the company is awaited.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"31-Jan-2020\\"}]\',\'2020-02-18 18:22:24\',\'2020-02-18 18:22:24\');' } } reason: SequelizeDatabaseError: Data too long for column 'announcement' at row 1
+    at Query.formatError (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+From previous event:
+    at Query.run (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:558:8)
+    at /home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:457:28)
+    at QueryInterface.insert (/home/darshit/repo/moneyman/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3685:53)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at model.save (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3661:8)
+    at Function.create (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:2023:8)
+    at getDataFromExternalSource (/home/darshit/repo/moneyman/server/api/stock/stock.service.js:97:25)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+2020-02-18T12:56:07.685Z - error: Unhandled Rejection at: Promise Promise {
+  <rejected> { SequelizeDatabaseError: Table 'moneyman_db.daily_data' doesn't exist
+    at Query.formatError (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+From previous event:
+    at Query.run (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:558:8)
+    at /home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:457:28)
+    at QueryInterface.insert (/home/darshit/repo/moneyman/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3685:53)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at model.save (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3661:8)
+    at Function.create (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:2023:8)
+    at getDataFromExternalSource (/home/darshit/repo/moneyman/server/api/stock/stock.service.js:97:25)
+    at <anonymous>
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { Error: Table 'moneyman_db.daily_data' doesn't exist
+    at Packet.asError (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packets/packet.js:712:17)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:28:26)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     sqlMessage: 'Table \'moneyman_db.daily_data\' doesn\'t exist',
+     sql: 'INSERT INTO `daily_data` (`id`,`stock_id`,`pricepercentchange`,`hp`,`lp`,`pricecurrent`,`DVolAvg5`,`DVolAvg10`,`DVolAvg30`,`DayAvg5`,`DayAvg30`,`DayAvg50`,`DayAvg150`,`DayAvg200`,`VOL`,`moneycontrol_json`,`announcement`,`created_on`,`updated_on`) VALUES (DEFAULT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,\'null\',\'[{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.As we could not able to connect to the website(mail sent regarding this at 3.25 p.m), we are now attaching once again the details of the outcome of the meeting under this head also. The exchange had announced on our behalf the quick results which contained the attached information\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has submitted to the Exchange, the financial results for the period ended December 31, 2019.\\",\\"desc\\":\\"Financial Result Updates\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, had written to the company. 3M India Limited has submitted their response.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"03-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, has written to the company. The response from the company is awaited.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"31-Jan-2020\\"}]\',\'2020-02-18 18:26:07\',\'2020-02-18 18:26:07\');' },
+  original: 
+   { Error: Table 'moneyman_db.daily_data' doesn't exist
+    at Packet.asError (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packets/packet.js:712:17)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:28:26)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     sqlMessage: 'Table \'moneyman_db.daily_data\' doesn\'t exist',
+     sql: 'INSERT INTO `daily_data` (`id`,`stock_id`,`pricepercentchange`,`hp`,`lp`,`pricecurrent`,`DVolAvg5`,`DVolAvg10`,`DVolAvg30`,`DayAvg5`,`DayAvg30`,`DayAvg50`,`DayAvg150`,`DayAvg200`,`VOL`,`moneycontrol_json`,`announcement`,`created_on`,`updated_on`) VALUES (DEFAULT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,\'null\',\'[{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.As we could not able to connect to the website(mail sent regarding this at 3.25 p.m), we are now attaching once again the details of the outcome of the meeting under this head also. The exchange had announced on our behalf the quick results which contained the attached information\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has submitted to the Exchange, the financial results for the period ended December 31, 2019.\\",\\"desc\\":\\"Financial Result Updates\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, had written to the company. 3M India Limited has submitted their response.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"03-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, has written to the company. The response from the company is awaited.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"31-Jan-2020\\"}]\',\'2020-02-18 18:26:07\',\'2020-02-18 18:26:07\');' },
+  sql: 'INSERT INTO `daily_data` (`id`,`stock_id`,`pricepercentchange`,`hp`,`lp`,`pricecurrent`,`DVolAvg5`,`DVolAvg10`,`DVolAvg30`,`DayAvg5`,`DayAvg30`,`DayAvg50`,`DayAvg150`,`DayAvg200`,`VOL`,`moneycontrol_json`,`announcement`,`created_on`,`updated_on`) VALUES (DEFAULT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,\'null\',\'[{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.As we could not able to connect to the website(mail sent regarding this at 3.25 p.m), we are now attaching once again the details of the outcome of the meeting under this head also. The exchange had announced on our behalf the quick results which contained the attached information\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has informed the Exchange regarding  Board meeting held on February 11, 2020.\\",\\"desc\\":\\"Outcome of Board Meeting\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"3M India Limited has submitted to the Exchange, the financial results for the period ended December 31, 2019.\\",\\"desc\\":\\"Financial Result Updates\\",\\"date\\":\\"11-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, had written to the company. 3M India Limited has submitted their response.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"03-Feb-2020\\"},{\\"sym\\":\\"3MINDIA\\",\\"longDesc\\":\\"Significant increase in volume has been observed in 3M India Limited. The Exchange, in order to ensure that investors have latest relevant information about the company and to inform the market place so that the interest of the investors is safeguarded, has written to the company. The response from the company is awaited.\\",\\"desc\\":\\"Spurt in Volume\\",\\"date\\":\\"31-Jan-2020\\"}]\',\'2020-02-18 18:26:07\',\'2020-02-18 18:26:07\');' } } reason: SequelizeDatabaseError: Table 'moneyman_db.daily_data' doesn't exist
+    at Query.formatError (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+From previous event:
+    at Query.run (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:558:8)
+    at /home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:457:28)
+    at QueryInterface.insert (/home/darshit/repo/moneyman/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3685:53)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at model.save (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3661:8)
+    at Function.create (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:2023:8)
+    at getDataFromExternalSource (/home/darshit/repo/moneyman/server/api/stock/stock.service.js:97:25)
+    at <anonymous>
+2020-02-18T12:58:45.065Z - error: Unhandled Rejection at: Promise Promise {
+  <rejected> { SequelizeDatabaseError: Table 'moneyman_db.daily_data' doesn't exist
+    at Query.formatError (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+From previous event:
+    at Query.run (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:558:8)
+    at /home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:457:28)
+    at QueryInterface.insert (/home/darshit/repo/moneyman/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3685:53)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at model.save (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3661:8)
+    at Function.create (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:2023:8)
+    at getDataFromExternalSource (/home/darshit/repo/moneyman/server/api/stock/stock.service.js:97:25)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+  name: 'SequelizeDatabaseError',
+  parent: 
+   { Error: Table 'moneyman_db.daily_data' doesn't exist
+    at Packet.asError (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packets/packet.js:712:17)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:28:26)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     sqlMessage: 'Table \'moneyman_db.daily_data\' doesn\'t exist',
+     sql: 'INSERT INTO `daily_data` (`id`,`stock_id`,`pricepercentchange`,`hp`,`lp`,`pricecurrent`,`DVolAvg5`,`DVolAvg10`,`DVolAvg30`,`DayAvg5`,`DayAvg30`,`DayAvg50`,`DayAvg150`,`DayAvg200`,`VOL`,`moneycontrol_json`,`announcement`,`created_on`,`updated_on`) VALUES (DEFAULT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,\'null\',\'[object Object],[object Object],[object Object],[object Object],[object Object]\',\'2020-02-18 18:28:45\',\'2020-02-18 18:28:45\');' },
+  original: 
+   { Error: Table 'moneyman_db.daily_data' doesn't exist
+    at Packet.asError (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packets/packet.js:712:17)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:28:26)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+     code: 'ER_NO_SUCH_TABLE',
+     errno: 1146,
+     sqlState: '42S02',
+     sqlMessage: 'Table \'moneyman_db.daily_data\' doesn\'t exist',
+     sql: 'INSERT INTO `daily_data` (`id`,`stock_id`,`pricepercentchange`,`hp`,`lp`,`pricecurrent`,`DVolAvg5`,`DVolAvg10`,`DVolAvg30`,`DayAvg5`,`DayAvg30`,`DayAvg50`,`DayAvg150`,`DayAvg200`,`VOL`,`moneycontrol_json`,`announcement`,`created_on`,`updated_on`) VALUES (DEFAULT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,\'null\',\'[object Object],[object Object],[object Object],[object Object],[object Object]\',\'2020-02-18 18:28:45\',\'2020-02-18 18:28:45\');' },
+  sql: 'INSERT INTO `daily_data` (`id`,`stock_id`,`pricepercentchange`,`hp`,`lp`,`pricecurrent`,`DVolAvg5`,`DVolAvg10`,`DVolAvg30`,`DayAvg5`,`DayAvg30`,`DayAvg50`,`DayAvg150`,`DayAvg200`,`VOL`,`moneycontrol_json`,`announcement`,`created_on`,`updated_on`) VALUES (DEFAULT,1,0,0,0,0,0,0,0,0,0,0,0,0,0,\'null\',\'[object Object],[object Object],[object Object],[object Object],[object Object]\',\'2020-02-18 18:28:45\',\'2020-02-18 18:28:45\');' } } reason: SequelizeDatabaseError: Table 'moneyman_db.daily_data' doesn't exist
+    at Query.formatError (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:247:16)
+    at Query.handler [as onResult] (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:68:23)
+    at Query.execute (/home/darshit/repo/moneyman/node_modules/mysql2/lib/commands/command.js:30:14)
+    at Connection.handlePacket (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:417:32)
+    at PacketParser.Connection.packetParser.p [as onPacket] (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:75:12)
+    at PacketParser.executeStart (/home/darshit/repo/moneyman/node_modules/mysql2/lib/packet_parser.js:75:16)
+    at Socket.Connection.stream.on.data (/home/darshit/repo/moneyman/node_modules/mysql2/lib/connection.js:82:25)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+From previous event:
+    at Query.run (/home/darshit/repo/moneyman/node_modules/sequelize/lib/dialects/mysql/query.js:57:12)
+    at Promise.try.then.connection (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:561:20)
+From previous event:
+    at Promise.resolve.retryParameters (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:558:8)
+    at /home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:39:21
+    at retryAsPromised (/home/darshit/repo/moneyman/node_modules/retry-as-promised/index.js:29:10)
+    at Sequelize.query (/home/darshit/repo/moneyman/node_modules/sequelize/lib/sequelize.js:457:28)
+    at QueryInterface.insert (/home/darshit/repo/moneyman/node_modules/sequelize/lib/query-interface.js:901:27)
+    at Promise.try.then.then.then (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3685:53)
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at model.save (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:3661:8)
+    at Function.create (/home/darshit/repo/moneyman/node_modules/sequelize/lib/model.js:2023:8)
+    at getDataFromExternalSource (/home/darshit/repo/moneyman/server/api/stock/stock.service.js:97:25)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)

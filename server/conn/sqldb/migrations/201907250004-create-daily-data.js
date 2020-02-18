@@ -5,7 +5,7 @@ const {
 module.exports = {
   up(queryInterface, DataTypes) {
     return queryInterface.createTable('daily_data', Object.assign(
-      properties('dailydata', DataTypes),
+      properties('dailyData', DataTypes),
       timestamps(['c', 'u' ,'d'], DataTypes),
       {
         created_by: keys('users'),

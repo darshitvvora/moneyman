@@ -3,6 +3,9 @@ const bluebird = require('bluebird');
 const moment = require('moment');
 const db = require('../../conn/sqldb');
 import {MONEYCONTROL_URL, NSE_ANNOUNCEMENT_URL} from '../../config/environment';
+const {
+    Stock,
+} = require('../../conn/sqldb');
 
 const logger = require('../../components/logger');
 
@@ -16,7 +19,7 @@ function execute(command, callback) {
 }
 
 
-const { Stock } = db;
+const { DailyData } = db;
 
 const getDataFromMoneyControl = async(symbol) => {
     //console.log(MONEYCONTROL_URL.replace('{{symbol}}', symbol));
@@ -91,6 +94,24 @@ const getDataFromExternalSource = async(symbols) => {
             getAnnouncementsFromNSE(symbols[i].symbol)
         ]);
         finalArr.push(Object.assign(data, {announcement: rows}));
+        await DailyData.create({
+            stock_id: symbols[i].id,
+            pricepercentchange: data.data ? data.data.pricepercentchange : 0,
+            hp: data.data ? data.data.HP : 0,
+            lp: data.data ? data.data.LP : 0,
+            pricecurrent: data.data ? data.data.pricecurrent : 0,
+            DVolAvg5: data.data ? data.data.DVolAvg5 : 0,
+            DVolAvg10: data.data ? data.data.DVolAvg10 : 0,
+            DVolAvg30: data.data ? data.data.DVolAvg30 : 0,
+            DayAvg5: data.data ? data.data['5DayAvg'] : 0,
+            DayAvg30: data.data ? data.data['30DayAvg'] : 0,
+            DayAvg50: data.data ? data.data['50DayAvg'] : 0,
+            DayAvg150: data.data ? data.data['150DayAvg'] : 0,
+            DayAvg200: data.data ? data.data['200DayAvg'] : 0,
+            VOL: data.data ? data.data.VOL : 0,
+            moneycontrol_json: JSON.stringify(data.data),
+            announcement: JSON.stringify(rows),
+        });
     }
     return finalArr;
 };
@@ -99,8 +120,9 @@ exports.getDataForNSE500 = async() => {
     const where = { group: 'NSE500' };
 
     const stocks = await Stock.findAll({
-        attributes: ['symbol', 'moneycontrol_sym'],
+        attributes: ['id', 'symbol', 'moneycontrol_sym'],
         where,
+        limit: 10,
         raw: true,
     });
 

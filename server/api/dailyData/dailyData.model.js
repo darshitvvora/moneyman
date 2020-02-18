@@ -1,7 +1,7 @@
 const properties = require('./dailyData.property');
 
 module.exports = (sequelize, DataTypes) => {
-  const DailyData = sequelize.define('dailyData', Object
+  const DailyData = sequelize.define('DailyData', Object
     .assign(properties(DataTypes)), {
     tableName: 'daily_data',
     timestamps: true,
