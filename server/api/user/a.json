@@ -1,0 +1,15 @@
+GET /live_market/dynaContent/live_watch/get_quote/companySnapshot/getAnnouncementsACC.json HTTP/1.1
+Host: www1.nseindia.com
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36
+Sec-Fetch-Dest: document
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+Cookie: pointer=1; sym1=GAIL; NSE-TEST-1=1910513674.20480.0000; bm_mi=0E47429587256EDD6F4DB0FF85E2411B~MmhmkoBmhJa7FzqCGNjzmAGodad5ATmxPTv8RU5UJ3epi0PFQpjpuJ2A3GQnw8yEbKX5w0x1g1iPjAZzjwyLkZiL3po9NmB3XFMLqyaeuVf3B+XWUxEKA+YXkdrexug1EmYVnVUUXjyvwFYIFDVlfWkj9MYSACUbgImVuLgLxMP1h2qquLzOnzZCrNNeFrDfVdQ1ypCg+ojZFp1fao7UBcRRuhHMrgHit0kxTooknnlCmnHrd5PCe4CUlikA6tsrtp255xINiq0SNIK2f+gHBLOBF2mXgnnJlhgxv7UgarZ87V6HiVYQCuoZqSpxu6IstRYT9l0i/nErPAhC296bMw==; bm_sv=05FB3C4ABE55A6800F80D04FBB07B297~ImCLeFOWxKONdhytX402lo6qanLL52iFnvWdR+8kfUwCxwb/VXyVH3gAUZ8/n3VzVMYQTt0QUuex+5qLvPcfV/D+QYZbIb0ZS74IsyYkanR+U+VuyEJ2sLQxaCy3aJqQw6Vy/kgFWdo3hFWZg6RJ9tLpQm/HfTBnEhhoY1KXIFM=; ak_bmsc=2F70BD80B7965F6BE76CE5FF2B30611E17D93530D80E0000B4794A5E5CB3D406~pl0JtryxBESGjWuiQX7Nk7hZvkGt8VnzxWMWhYOTMroeYFkflNjwBYiRQaEUbg1Q9OXf9xb7m2OBSuljUxk350s66Pvl/Q6z/4dRHHe6O8s56Tt05jzOrwQDlG4+eFFvsc/jEiqh4qwvFxD/2+UMGOj+4XX+Uaa1eO0/+TRElKKQGwfemQhPJOQSwkzfoJrrn6yJMgssH3jCv6km/IfAqlaYPTHZC/HmKXvDIiuBeWTBD6xN505EOcw+lbwDXRtiA+; RT="z=1&dm=nseindia.com&si=3cc3bf50-4ef8-4aff-b627-a0c5e27663a6&ss=k6qez5ys&sl=1&tt=6tt&bcn=%2F%2F684fc53f.akstat.io%2F&ld=6u0&ul=xg3&hd=xri"
+
