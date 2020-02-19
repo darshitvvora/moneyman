@@ -68,7 +68,12 @@ const getAnnouncementsFromNSE = async(symbol) =>
     new Promise(function(resolve, reject) {
         execute(`curl '${NSE_ANNOUNCEMENT_URL.replace('{{symbol}}', symbol)}' -H 'Connection: keep-alive' -H 'Cache-Control: max-age=0' -H 'Upgrade-Insecure-Requests: 1' -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36'  -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'  --compressed`, function(json) {
             // console.log(json,JSON.parse(json));
-            return resolve(JSON.parse(json));
+            try {
+             let val = JSON.parse(json);
+                return resolve(val);
+            } catch(e) {
+                return resolve(json);
+            }
         });
     })
 ;
@@ -89,7 +94,7 @@ const getAnnouncementsFromNSE = async(symbol) =>
 const getDataFromExternalSource = async(symbols) => {
     const finalArr = [];
     for(let i = 0; i < symbols.length; i++) {
-        const [data, {rows}] = await Promise.all([
+        const [data, {rows = []}] = await Promise.all([
             getDataFromMoneyControl(symbols[i].moneycontrol_sym),
             getAnnouncementsFromNSE(symbols[i].symbol)
         ]);

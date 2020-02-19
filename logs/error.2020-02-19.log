@@ -1,0 +1,12 @@
+2020-02-19T06:01:01.571Z - error: uncaughtException SyntaxError: Unexpected token s in JSON at position 1
+    at JSON.parse (<anonymous>)
+    at /home/darshit/repo/moneyman/server/api/stock/stock.service.js:71:33
+    at /home/darshit/repo/moneyman/server/api/stock/stock.service.js:17:9
+    at ChildProcess.exithandler (child_process.js:267:7)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at maybeClose (internal/child_process.js:925:16)
+    at Socket.stream.socket.on (internal/child_process.js:346:11)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at Pipe._handle.close [as _onclose] (net.js:567:12)
