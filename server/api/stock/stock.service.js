@@ -122,7 +122,7 @@ exports.getDataForNSE500 = async() => {
     const stocks = await Stock.findAll({
         attributes: ['id', 'symbol', 'moneycontrol_sym'],
         where,
-        limit: 10,
+        //limit: 10,
         raw: true,
     });
 
