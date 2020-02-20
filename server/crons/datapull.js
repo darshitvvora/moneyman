@@ -24,7 +24,8 @@ module.exports = class HourlyMail {
     constructor() {
         this.init();
         this.startDate = moment()
-            .subtract(this.time, 'h').format('YYYY-MM-DD HH:mm:ss');
+            .subtract(this.time, 'h')
+            .format('YYYY-MM-DD HH:mm:ss');
         this.endDate = moment().format('YYYY-MM-DD HH:mm:ss');
     }
 
@@ -45,7 +46,7 @@ module.exports = class HourlyMail {
         try {
             const allCases = await this.getCases();
 
-            if (!allCases.length) {
+            if(!allCases.length) {
                 log('No record found');
                 return rp.get(`${GRONIT_URL}/run/${HOURLY_MAIL_GRONIT_ID}`);
             }
@@ -61,7 +62,7 @@ module.exports = class HourlyMail {
 
             let data = [];
 
-            if (this.queryId === 2) {
+            if(this.queryId === 2) {
                 const vendorAdminUserList = await User.findAll({
                     attributes: ['id', 'client_id'],
                     where: {
@@ -91,7 +92,8 @@ module.exports = class HourlyMail {
                 [x]: _.groupBy(this.userApplicant[x], 'client_category_id'),
             })));
 
-            const userIdList = Object.keys(this.userApplicant).filter(x => +x).map(Number);
+            const userIdList = Object.keys(this.userApplicant).filter(x => +x)
+                .map(Number);
 
             const users = await User.findAll({
                 attributes: ['id', 'email', 'name', 'client_id'],
@@ -109,32 +111,32 @@ module.exports = class HourlyMail {
             });
 
             this.userEmailMap = users.reduce((acc, user) =>
-                    Object.assign(acc, {
-                        [user.id]: {
-                            id: user.id,
-                            clientName: user.Client.name,
-                            client_id: user.client_id,
-                            emailId: user.email,
-                            name: user.name,
-                            admins: (user.Client.Admins || []).map(adm => adm.email),
-                        },
-                    })
-                , {});
+                Object.assign(acc, {
+                    [user.id]: {
+                        id: user.id,
+                        clientName: user.Client.name,
+                        client_id: user.client_id,
+                        emailId: user.email,
+                        name: user.name,
+                        admins: (user.Client.Admins || []).map(adm => adm.email),
+                    },
+                })
+            , {});
 
-            const emailData = userIdList.map(userId => (
+            const emailData = userIdList.map(userId =>
                 this.setTemplateData(this.userEmailMap[userId], userId)
-            ));
+            );
 
             log('Sending mails');
             await bluebird.map(emailData, record => HourlyMail
                 .sendMail(this.userEmailMap[record.userId], record));
 
             log('Hourly mail completed successfully');
-        } catch (err) {
+        } catch(err) {
             await Notify.slack(`Hourly Mail failed: ${err.stack}`);
             logger.error('Hourly mail failed: ', err);
         } finally {
-            if (config.NODE_ENV !== 'development') {
+            if(config.NODE_ENV !== 'development') {
                 await rp.get(`${GRONIT_URL}/complete/${HOURLY_MAIL_GRONIT_ID}`);
             }
         }
@@ -159,7 +161,7 @@ module.exports = class HourlyMail {
                             comment: v.comments,
                             link: `${URLS_VERIFY}/main/cases/${v.id}/view`,
                         };
-                    } catch (err) {
+                    } catch(err) {
                         err.message += ` details:: caseId = ${v.id}`;
                         throw err;
                     }
@@ -204,7 +206,7 @@ module.exports = class HourlyMail {
             });
 
             return true;
-        } catch (err) {
+        } catch(err) {
             logger.error('Hourly send mail failed: ', err);
             return user;
         }

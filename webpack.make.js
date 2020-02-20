@@ -292,8 +292,8 @@ module.exports = function makeWebpackConfig(options) {
     let env = _.merge({
         'process.env.NODE_ENV': DEV ? '"development"'
             : BUILD ? '"production"'
-            : TEST ? '"test"'
-            : '"development"'
+                : TEST ? '"test"'
+                    : '"development"'
     }, localEnv);
 
     // Reference: https://webpack.github.io/docs/list-of-plugins.html#defineplugin

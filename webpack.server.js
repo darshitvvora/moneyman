@@ -25,19 +25,19 @@ export const server = new WebpackDevServer(compiler, {
     noInfo: false,
 
     proxy: {
-      '/api': {
-        target: 'http://localhost:9000',
-        secure: false,
-      },
-      '/auth': {
-        target: 'http://localhost:9000',
-        secure: false,
-      },
-      '/primus': {
-        target: 'http://localhost:9000',
-        secure: false,
-        ws: true,
-      },
+        '/api': {
+            target: 'http://localhost:9000',
+            secure: false,
+        },
+        '/auth': {
+            target: 'http://localhost:9000',
+            secure: false,
+        },
+        '/primus': {
+            target: 'http://localhost:9000',
+            secure: false,
+            ws: true,
+        },
     },
 });
 

@@ -6,11 +6,9 @@ import {NavbarComponent} from '../../components/navbar/navbar.po';
 describe('Login View', function() {
     let page;
 
-    const loadPage = () => {
-        return browser.get(`${config.baseUrl}/login`).then(() => {
-            page = new LoginPage();
-        });
-    };
+    const loadPage = () => browser.get(`${config.baseUrl}/login`).then(() => {
+        page = new LoginPage();
+    });
 
     const testUser = {
         name: 'Test User',
@@ -54,8 +52,8 @@ describe('Login View', function() {
             await browser.wait(() => browser.getCurrentUrl(), 5000, 'URL didn\'t change after 5s');
             browser.ignoreSynchronization = true;
 
-            expect((await browser.getCurrentUrl())).to.equal(`${config.baseUrl}/home`);
-            expect((await navbar.navbarAccountGreeting.getText())).to.equal(`Hello ${testUser.name}`);
+            expect(await browser.getCurrentUrl()).to.equal(`${config.baseUrl}/home`);
+            expect(await navbar.navbarAccountGreeting.getText()).to.equal(`Hello ${testUser.name}`);
         });
 
         describe('and invalid credentials', function() {
@@ -67,7 +65,7 @@ describe('Login View', function() {
                     password: 'badPassword'
                 });
 
-                expect((await browser.getCurrentUrl())).to.equal(`${config.baseUrl}/login`);
+                expect(await browser.getCurrentUrl()).to.equal(`${config.baseUrl}/login`);
 
                 let helpBlock = page.form.element(by.css('.form-group.has-error .help-block:not([hidden])'));
 
@@ -75,7 +73,7 @@ describe('Login View', function() {
                 await browser.wait(() => helpBlock.getText(), 5000, 'Couldn\'t find help text after 5s');
                 browser.ignoreSynchronization = true;
 
-                expect((await helpBlock.getText())).to.equal('This password is not correct.');
+                expect(await helpBlock.getText()).to.equal('This password is not correct.');
             });
         });
     });

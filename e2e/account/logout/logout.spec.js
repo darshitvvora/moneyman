@@ -4,7 +4,7 @@ import {LoginPage} from '../login/login.po';
 import {NavbarComponent} from '../../components/navbar/navbar.po';
 
 describe('Logout View', function() {
-    const login = async (user) => {
+    const login = async(user) => {
         await browser.get(`${config.baseUrl}/login`);
 
         const loginPage = new LoginPage();
@@ -38,15 +38,15 @@ describe('Logout View', function() {
             await browser.wait(() => browser.getCurrentUrl(), 5000, 'URL didn\'t change after 5s');
             browser.ignoreSynchronization = true;
 
-            expect((await browser.getCurrentUrl())).to.equal(`${config.baseUrl}/home`);
-            expect((await navbar.navbarAccountGreeting.getText())).to.equal(`Hello ${testUser.name}`);
+            expect(await browser.getCurrentUrl()).to.equal(`${config.baseUrl}/home`);
+            expect(await navbar.navbarAccountGreeting.getText()).to.equal(`Hello ${testUser.name}`);
 
             await navbar.logout();
 
             navbar = new NavbarComponent();
 
-            expect((await browser.getCurrentUrl())).to.equal(`${config.baseUrl}/home`);
-            expect((await navbar.navbarAccountGreeting.isDisplayed())).to.equal(false);
+            expect(await browser.getCurrentUrl()).to.equal(`${config.baseUrl}/home`);
+            expect(await navbar.navbarAccountGreeting.isDisplayed()).to.equal(false);
         });
     });
 });

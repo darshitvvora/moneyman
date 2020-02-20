@@ -9,7 +9,7 @@ const envFile = path.join(root, '.env');
 let config = {};
 let env = {};
 
-if (fs.existsSync(envFile)) {
+if(fs.existsSync(envFile)) {
     env = dotenv.config({ path: envFile });
     config = env.parsed || env;
 }

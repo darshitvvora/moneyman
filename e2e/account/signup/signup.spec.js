@@ -22,9 +22,7 @@ describe('Signup View', function() {
 
     before(() => loadPage());
 
-    after(() => {
-        return UserModel.destroy({ where: {} });
-    });
+    after(() => UserModel.destroy({ where: {} }));
 
     it('should include signup form with correct inputs and submit button', function() {
         expect(page.form.name.getAttribute('type')).to.eventually.equal('text');
@@ -44,9 +42,7 @@ describe('Signup View', function() {
     });
 
     describe('with local auth', function() {
-        before(() => {
-            return UserModel.destroy({ where: {} });
-        });
+        before(() => UserModel.destroy({ where: {} }));
 
         it('should signup a new user, log them in, and redirecting to "/"', async function() {
             await page.signup(testUser);
@@ -57,8 +53,8 @@ describe('Signup View', function() {
 
             let navbar = new NavbarComponent();
 
-            expect((await browser.getCurrentUrl())).to.equal(`${config.baseUrl}/home`);
-            expect((await navbar.navbarAccountGreeting.getText())).to.equal(`Hello ${testUser.name}`);
+            expect(await browser.getCurrentUrl()).to.equal(`${config.baseUrl}/home`);
+            expect(await navbar.navbarAccountGreeting.getText()).to.equal(`Hello ${testUser.name}`);
         });
 
         describe('and invalid credentials', function() {
@@ -71,10 +67,10 @@ describe('Signup View', function() {
                 await browser.wait(() => browser.getCurrentUrl(), 5000, 'URL didn\'t change after 5s');
                 browser.ignoreSynchronization = true;
 
-                expect((await browser.getCurrentUrl())).to.equal(`${config.baseUrl}/signup`);
+                expect(await browser.getCurrentUrl()).to.equal(`${config.baseUrl}/signup`);
 
                 let helpBlock = page.form.element(by.css('.form-group.has-error .help-block:not([hidden])'));
-                expect((await helpBlock.getText())).to.equal('This email address is already in use.');
+                expect(await helpBlock.getText()).to.equal('This email address is already in use.');
             });
         });
     });

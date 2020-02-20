@@ -17,7 +17,7 @@ const logger = new winston.Logger({
             config: { environment: NODE_ENV, release: '@@_RELEASE_' },
             level: 'warn',
         }),
-        new (winston.transports.Console)({
+        new winston.transports.Console({
             name: 'console',
             level: 'debug',
             silent: NODE_ENV === 'production',

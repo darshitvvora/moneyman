@@ -4,11 +4,9 @@ import {MainPage} from './main.po';
 describe('Main View', function() {
     let page;
 
-    beforeEach(() => {
-        return browser.get(`${config.baseUrl}/`).then(() => {
-            page = new MainPage();
-        });
-    });
+    beforeEach(() => browser.get(`${config.baseUrl}/`).then(() => {
+        page = new MainPage();
+    }));
 
     it('should include jumbotron with correct data', function() {
         expect(page.h1El.getText()).to.eventually.equal('\'Allo, \'Allo!');
